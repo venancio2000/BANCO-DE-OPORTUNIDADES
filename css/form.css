@@ -1,0 +1,224 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Titillium+Web:ital@1&display=swap");
+@font-face {
+  font-family: "fontelogo";
+  src: url(bubblegum-sans-regular.otf);
+}
+
+p {
+  text-align: justify;
+  text-indent: 50px;
+}
+
+/* formatação de menu*/
+
+nav#menu {
+  display: block;
+}
+
+nav#menu ul {
+  list-style: none;
+  text-transform: uppercase;
+  position: absolute;
+  top: -20px;
+  left: 1000px;
+}
+
+nav#menu li:hover {
+  background-color: #606060;
+}
+
+nav#menu h1 {
+  display: none;
+}
+
+nav#menu li {
+  display: inline-block;
+  background-color: #dddddd;
+  padding: 10px;
+  margin: 3px;
+  transition: background-color 1s;
+}
+
+nav#menu a {
+  color: black;
+  text-decoration: none;
+}
+
+nav#menu a:hover {
+  color: white;
+  text-decoration: underline;
+}
+
+body {
+  background-color: #dddddd;
+  font-family: arial, sans-serif;
+}
+
+a {
+  color: #606060;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* formatação de interface*/
+
+div#interface {
+  width: 980px;
+  margin: -10px auto 0px auto;
+  background-color: white;
+  padding: 10px;
+  box-shadow: 0px 0px 10px black;
+}
+
+/* formatação de cabeçalho*/
+
+header#cabecalho {
+  border-bottom: 1px #606060 solid;
+  height: 150px;
+}
+
+header#cabecalho h1 {
+  font-family: fontelogo, sans-serif;
+  font-size: 30pt;
+  padding: 0px;
+  color: #606060;
+  margin-bottom: 0px;
+  text-shadow: 1px 1px 1px black;
+}
+
+/*formatação corpo da pagina*/
+
+section#corpo {
+  display: block;
+  width: 560px;
+  float: left;
+  border-right: 1px solid #606060;
+  padding-right: 15px;
+}
+
+/*Rodape*/
+
+footer#rodape {
+  clear: both;
+  border-top: 1px solid #606060;
+}
+
+footer#rodape p {
+  text-align: center;
+}
+
+/*Rodape*/
+
+footer#rodape {
+  clear: both;
+  border-top: 1px solid #606060;
+}
+
+footer#rodape p {
+  text-align: center;
+}
+
+header#cabecalho-artigo h1 {
+  font-family: fontelogo, sans-serif;
+  font-size: 20pt;
+  color: #606060;
+  margin-bottom: 25px;
+  text-align: center;
+}
+
+header#cabecalho-artigo h2 {
+  font-family: fontelogo, sans-serif;
+  font-size: 20pt;
+  color: #606060;
+  text-align: center;
+  margin-bottom: 0px;
+}
+
+header#cabecalho-artigo p {
+  width: 750px;
+  font-size: 12pt;
+  padding-bottom: 15px;
+}
+
+header#cabecalho-artigo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+form {
+  width: 650px;
+  margin: auto;
+}
+
+input,
+textarea {
+  font-family: sans-serif;
+  font-weight: normal;
+  font-size: 13pt;
+  background-color: rgba(255, 255, 255, 0.8);
+}
+
+input:hover,
+textarea:hover {
+  background-color: #dddddd;
+}
+legend {
+  color: #888888;
+  font-weight: bold;
+  font-size: 13pt;
+  font-family: sans-serif;
+}
+
+fieldset {
+  border-color: #cecece;
+  margin: 20px;
+}
+
+fieldset#genero {
+  width: 280px;
+  margin-left: 130px;
+}
+
+fieldset#genero input {
+  margin: 5px 50px;
+}
+
+fieldset#idade {
+  width: 280px;
+  margin-left: 130px;
+}
+
+fieldset#idade input {
+  margin: 5px 50px;
+}
+
+fieldset#picture img {
+  width: 150px;
+  height: 150px;
+  margin-left: 50px;
+}
+
+textarea#cmsg {
+  margin-left: 35px;
+}
+
+fieldset#usuario {
+  background: url("icone-contato.png") no-repeat 95% 95%;
+}
+
+fieldset#endereco {
+  background: url("icone-endereco.png") no-repeat 95% 95%;
+}
+
+fieldset#mensagem {
+  background: url("icone-mensagem.png") no-repeat 95% 95%;
+}
+
+fieldset#pedido {
+  background: url("icone-pagamento.png") no-repeat 95% 95%;
+}

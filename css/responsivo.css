@@ -1,0 +1,97 @@
+@charset "UTF-8";
+
+@media (max-width: 1050px) {
+  header {
+    width: 100%;
+  }
+  header#cabecalho h1 {
+    font-size: 20pt;
+  }
+  div#interface {
+    width: 850px;
+  }
+  header#cabecalho-artigo p {
+    font-size: 13pt;
+    width: 530px;
+  }
+}
+
+@media (max-width: 890px) {
+  header {
+    width: 100%;
+  }
+  header#cabecalho h1 {
+    font-size: 22pt;
+  }
+  div#interface {
+    width: 650px;
+  }
+  header#cabecalho-artigo p {
+    font-size: 12pt;
+    width: 510px;
+  }
+}
+
+@media (max-width: 690px) {
+  header {
+    width: 100%;
+  }
+  header#cabecalho h1 {
+    font-size: 20pt;
+  }
+  div#interface {
+    width: 500px;
+  }
+  header#cabecalho-artigo p {
+    font-size: 10pt;
+    width: 490px;
+  }
+  form {
+    width: 100%;
+    margin: -18px;
+  }
+  input#tenviar {
+    margin-left: 28px;
+    margin-bottom: 20px;
+    width: 70px;
+  }
+}
+
+@media (max-width: 550px) {
+  header {
+    width: 100%;
+  }
+  header#cabecalho h1 {
+    font-size: 20pt;
+  }
+  div#interface {
+    width: 440px;
+    margin-left: 5px;
+  }
+  header#cabecalho-artigo p {
+    font-size: 10pt;
+    width: 430px;
+  }
+  form {
+    width: 100%;
+  }
+  fieldset#genero {
+    margin-left: 70px;
+  }
+  fieldset#idade {
+    margin-left: 70px;
+  }
+  fieldset#picture input {
+    font-size: 12pt;
+    margin-right: 13px;
+  }
+  fieldset#endereco {
+    margin-right: -18px;
+  }
+  fieldset#profi {
+    margin-left: 15px;
+  }
+  fieldset#usuario {
+    margin-right: -16px;
+  }
+}

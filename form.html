@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+ <head>
+   <meta charset="UTF-8"/>
+    <title>BANCO DE OPORTUNIDADES</title>
+     <link rel="stylesheet" href="css/form.css"/>
+     <link rel="stylesheet" href="css/responsivo.css">
+     
+</head>
+	
+<body>
+     <div id="interface">
+    
+      <header id="cabecalho">
+	    
+	     
+	   
+     <hgroup>
+      <h1>BANCO DE OPORTUNIDADES</h1>
+     </hgroup>
+
+  </header>
+
+  <section id="">
+    <article id="">   
+     <header id="cabecalho-artigo">
+  <hgroup>
+    <h1>O que é?</h1>  
+   <p>
+    O Banco de Oportunidades Pop Rua é uma iniciativa do Coletivo Voz e Rua que visa promover oportunidades de trabalho para a população em situação de rua em Brasília-DF.A ideia é cadastrar currículos das pessoas em situação de rua e fazer articulação com instituições que possam oferecer trabalho.A iniciativa visa facilitar a divulgação das demandas por trabalho como tentativa de superação da discriminação social que este segmento social vivência,cotidianamente,na busca pelo trabalho.A atual crise socioeconômica aponta para a necessidade de cooperação e solidariedade social.Não fazemos conferência das informações encaminhadas e nenhum tipo de consulta.As possíveis contratações são de inteira responsabilidade dos(as)contratantes.Fale com Marcelo Ferreira (61)992834086 e-mail:<a href=""> oportunidadepoprua@gmail.com</a> 
+    </p>
+    <h2>Formulario</h2>
+ </hgroup>
+
+</header>
+ 
+
+  <form  method="POST" name="contato" id="contato" action="mailto:">
+  
+<fieldset id="usuario"><legend>Identificação do Usuário</legend>
+     <p><label for="cnome">Nome:</label><input type="text" name="tnome" id="cnome" size="20" maxlength="30" placeholder="Nome Completo" ></p>
+    <p><label for="csenha">Senha:</label><input type="password" name="tsenha" id="csenha" size="8" maxlength="10" placeholder="Insira Senha"/></p>
+    <p><label for="cmail">E-mail:</label><input type="email" name="tmail" id="cmail" size="20 " maxlength="30" placeholder="Insira o Email"/></p>
+    <fieldset id="genero"><legend>Gênero</legend>
+
+         <input type="radio" name="genero" id="cmasc" checked/><label for="cmasc">Masculino</label>
+
+         <input type="radio" name="genero" id="cfem"/><label for="cfem">Feminino</label> 
+
+         <input type="radio" name="genero" id="cbina"/><label for="cbinar">Não Binário</label> 
+
+         <input type="radio" name="genero" id="ctransma"/><label for="transma">Transexual Masculino </label> 
+
+         <input type="radio" name="genero" id="ctransfe"/><label for="transfe">Transexual Feminino</label> 
+
+         <input type="radio" name="genero" id="coutro"/><label for="toutro">Outros</label>
+        </fieldset>
+
+        <fieldset id="idade"><legend>Idade</legend>
+            <input type="radio" name="idade" id="idade18/29" checked/><label for="idade18/29">De 18 a 29 anos</label>
+   
+            <input type="radio" name="idade" id="cidade30/39"/><label for="idade30/39">De 30 a 39 anos</label> 
+   
+            <input type="radio" name="idade" id="idade40/49"/><label for="idade40/49">De 40 a 49 anos</label> 
+
+            <input type="radio" name="idade" id="idade50/59"/><label for="idade50/59">De 50 a 59 anos  </label> 
+
+            <input type="radio" name="idade" id="idade60/69"/><label for="idade60/69">De 60 a 64 anos  </label> 
+   
+            <input type="radio" name="idade" id="idade65"/><label for="idade65">De 65 a mais</label> 
+   
+       
+           </fieldset>
+
+           <p><label for="tele">Telefone Para Contato:</label><input type="tel" name="tele" id="tele" size="13" maxlength="30" placeholder="Telefone" >   
+        <p><label> Data de Nascimento:</label><input type="date" name="tnasc" id="cnasc"/></p>
+  
+  </fieldset>
+
+  
+  <fieldset id="picture"><legend>Foto Usuário</legend> 
+    <p><label for="img"></label><input type="file" name="img" onchange="previewimg()"></p>
+    <img src="" alt="">
+    </fieldset>
+  
+ 
+   <fieldset id="endereco"><legend>Endereço do Usuário</legend> 
+   <p><label for="crua">Logradouro:</label><input type="text" name="trua" id="crua" size="13" maxlength="80" placeholder="Rua,Av,Trav,...."/></p>
+  <p><label for="cnum">Número:</label><input type="number" name="tnum" id="cnum" min="0" max="9999"/></p>
+  <p><label for="cest">Localidade:</label><select  name="test" id="cest"></p>
+   <optgroup label="Ceilandia">
+     <option value="DF" selected>Ceilandia-centro</option>
+     <option value="DF">Ceilandia-norte</option>
+     <option value="DF">Ceilandia-sul</option>
+     <option value="DF">Sol Nascente</option>
+     <option value="DF">Por Do Sol</option>
+     <option value="DF">P-Sul</option>
+     <option value="DF">P-norte</option>
+   </optgroup>
+   <optgroup label="Taguatinga">
+     <option value="DF">Taguatinga-Centro</option>
+     <option value="DF">Taguatinga-Norte</option>
+     <option value="DF">Taguatinga-Sul</option>  
+  </optgroup>  
+  </select>
+   
+   <p><label for="ccid">Cidade:</label><input type="text" name="tcid" id="ccid" size="20" maxlength="40" placeholder="Sua Cidade" list="cidade"/></p>
+   <datalist id="cidade">
+     <option value="Taguatinga"></option>
+     <option value="Ceilandia"></option>
+     <option value="Paranoá"></option>
+     <option value="Brazlândia"></option>   
+   </datalist>
+  
+
+</fieldset>  
+  </fieldset>
+
+  <fieldset id="profi"><legend>Histórico Profissional</legend> 
+    <p><label for="cprofi">Profissão:</label><input type="text" name="profi" id="cprof" size="17" maxlength="80" placeholder="cargo ou área"/></p>
+
+    <p><label for="clocal">Local:</label><input type="text" name="local" id="clocal" size="21" maxlength="80" placeholder="Empresas Ou Instituições"/></p>
+    
+    <p><label for="cperiodo">Período:</label><input type="text" name="periodo" id="cperiodo" size="19" maxlength="80" placeholder="Exemplo(5 a 10 meses)"/></p>
+    
+    <p><label for="">Atividades Desenv:</label></p>
+    <textarea name="tmsg" id="cmsg" cols="40" rows="5" placeholder="Digite Neste Campo"></textarea>
+    
+    <p><label for="cprofi">Profissão:</label><input type="text" name="profi" id="cprof" size="17" maxlength="80" placeholder="cargo ou área"/></p>
+
+    <p><label for="clocal">Local:</label><input type="text" name="local" id="clocal" size="21" maxlength="80" placeholder="Empresas Ou Instituições"/></p>
+    
+    <p><label for="cperiodo">Período:</label><input type="text" name="periodo" id="cperiodo" size="19" maxlength="80" placeholder="Exemplo(5 a 10 meses)"/></p>
+    
+    <p><label for="">Atividades Desenv:</label></p>
+    <textarea name="tmsg" id="cmsg" cols="40" rows="5" placeholder="Digite Neste Campo"></textarea>
+    <p><label for="cprofi">Profissão:</label><input type="text" name="profi" id="cprof" size="17" maxlength="80" placeholder="cargo ou área"/></p>
+
+    <p><label for="clocal">Local:</label><input type="text" name="local" id="clocal" size="21" maxlength="80" placeholder="Empresas Ou Instituições"/></p>
+    
+    <p><label for="cperiodo">Período:</label><input type="text" name="periodo" id="cperiodo" size="19" maxlength="80" placeholder="Exemplo(5 a 10 meses)"/></p>
+    
+    <p><label for="">Atividades Desenv:</label></p>
+    <textarea name="tmsg" id="cmsg" cols="40" rows="5" placeholder="Digite Neste Campo"></textarea>
+ 
+
+ </fieldset>  
+   </fieldset>
+
+  <input  type="image" id="tenviar" name="tenviar" src="btn enviar.png" />
+
+</form>
+</article>
+</section>
+ <footer id="rodape">
+<p>Copyright &#169; 2021-Tv Segundo News<br/>
+  <a href="https://www.tvsegundonews.com/" target="blank">Site</a> 
+  <a href="https://www.instagram.com/tvsegundonews/" target="blank">Instagram</a></p>
+  <p></p>
+ </footer>
+
+</div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+</body>
+</html>
